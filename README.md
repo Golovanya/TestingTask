@@ -1,30 +1,26 @@
-# React + TypeScript + Vite
+# Тестовое задание для стажировки Infotecs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<a href="" target="_blank">Ссылка на реализацию<a/>  
+## В рамках работы выполнены два задания: Таблица с отображением списка пользователей и Todo list
+### Задание 1:
++ Таблица включает следующие колонки: ФИО, возраст, пол, номер телефона и адрес (город и название улицы).
++ Ширина таблицы ограничена 100% от экрана пользователя, но не более 1200px.
++ Реализована обработка возможных ошибок при работе с HTTP-запросами, обеспечивая стабильную работу приложения.
++ Реализован компонент поиска, который использует запросы к API для фильтрации данных (поиск только по колонке ФИО, иначе поиск через API не реализовать, в коде представлен также альтернативный вариант поиска по всем колонкам на стороне клиента.
 
-Currently, two official plugins are available:
+<br/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Задание 2:
++ Главная страница содержит заголовок приложения и список задач.
++ Форма для добавления новой задачи с полями: заголовок, описание и дата завершения.
++ Кнопка для добавления задачи, а также кнопки для редактирования и удаления каждой задачи.
++ Задачи хранятся в локальном хранилище браузера для сохранения данных при перезагрузке страницы.
++ Добавлены анимации для добавления и удаления задач.
 
-## Expanding the ESLint configuration
+### В ходе реализации использовались следующие технологии:
++ React
++ TypeScript
++ Consta Ui
++ React-router-dom
+  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
